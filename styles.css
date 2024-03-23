@@ -1,0 +1,96 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    background-color: #666;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+section {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.content img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+}
+
+
+.translator-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.translator-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.translator-input,
+.translator-output {
+    width: 44%; 
+    
+}
+
+.translator-input label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.translator-input textarea,
+.translator-output textarea {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    
+}
+
+.translate-button,
+.add-modify-button {
+    background-color: #008CBA;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.translate-button:hover,
+.add-modify-button:hover {
+    background-color: #005f6b;
+}
