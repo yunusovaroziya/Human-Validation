@@ -6,7 +6,7 @@ body {
 }
 
 header {
-    background-color: #333;
+    background-color: #fff;
     color: #fff;
     padding: 10px;
     display: flex;
@@ -14,6 +14,10 @@ header {
     align-items: center;
 }
 
+ h2 {
+    padding: 0;
+    margin: 10px;
+}
 nav {
     background-color: #666;
     color: #fff;
@@ -49,18 +53,23 @@ footer {
 
 
 .translator-container {
-    max-width: 800px;
+    /* max-width: 800px; */
     margin: 0 auto;
+    width: 1400px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 .translator-content {
+    /* margin: 10px; */
     display: flex;
     justify-content: space-between;
 }
 
 .translator-input,
 .translator-output {
-    width: 44%; 
+    width: 50%;
+    margin: 20px;
     
 }
 
@@ -71,12 +80,13 @@ footer {
 
 .translator-input textarea,
 .translator-output textarea {
-    width: 100%;
+    width: 90%;
     height: 150px;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
     margin-bottom: 10px;
+    margin-right: 200px;
     
 }
 
@@ -93,4 +103,148 @@ footer {
 .translate-button:hover,
 .add-modify-button:hover {
     background-color: #005f6b;
+}
+
+
+/*profile page*/
+
+.profile-info,
+.profile-bio,
+.profile-stats,
+.requests-list {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.profile-info h2,
+.profile-bio h2,
+.profile-stats h2,
+.requests-list h2 {
+    margin-top: 0;
+}
+
+.user-avatar {
+    text-align: center;
+}
+
+.user-avatar img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.user-details {
+    margin-top: 20px;
+}
+
+.user-details p {
+    margin: 5px 0;
+}
+
+.profile-stats .user-points,
+.profile-stats .user-rank {
+    margin-top: 20px;
+}
+
+.requests-list ul {
+    padding: 0;
+    margin: 10px;
+
+    
+}
+
+
+.request-item {
+    border: 1px solid #989797;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.request-details {
+    flex-grow: 1;
+    margin-right: 10px;
+    align-items:center;
+    text-align: center;
+}
+
+.requests-list li {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:1100px;
+    
+}
+
+.button {
+    margin-left: 10px;
+    background-color: #008CBA;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #005f6b;
+}
+
+.modify-list{
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.modify-list li{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+    justify-content: space-between;
+    align-items: row;
+   width: 200px;
+}
+
+/*login page*/ 
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 30%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+
 }
